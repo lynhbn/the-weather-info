@@ -1,0 +1,5 @@
+# pip install -r requirement.txt
+robotframework==6.0.2
+robotframework-playerlibrary==1.0.3
+playwright==1.30.0
+robotframework-pythonlibcore==3.0.0

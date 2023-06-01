@@ -1,0 +1,14 @@
+{'date': 'Fri 02', 'high_tem': '89°', 'low_tem': '81°', 'description': 'PM Thunderstorms', 'humidity_day': '73%', 'humidity_night': '83%'}
+{'date': 'Sat 03', 'high_tem': '89°', 'low_tem': '81°', 'description': 'Thunderstorms', 'humidity_day': '71%', 'humidity_night': '82%'}
+{'date': 'Sun 04', 'high_tem': '90°', 'low_tem': '81°', 'description': 'Mostly Cloudy', 'humidity_day': '72%', 'humidity_night': '82%'}
+{'date': 'Mon 05', 'high_tem': '90°', 'low_tem': '81°', 'description': 'AM Thunderstorms', 'humidity_day': '72%', 'humidity_night': '81%'}
+{'date': 'Tue 06', 'high_tem': '91°', 'low_tem': '82°', 'description': 'Partly Cloudy', 'humidity_day': '71%', 'humidity_night': '80%'}
+{'date': 'Wed 07', 'high_tem': '90°', 'low_tem': '82°', 'description': 'Mostly Cloudy', 'humidity_day': '71%', 'humidity_night': '81%'}
+{'date': 'Thu 08', 'high_tem': '90°', 'low_tem': '81°', 'description': 'Mostly Cloudy', 'humidity_day': '71%', 'humidity_night': '81%'}
+{'date': 'Fri 09', 'high_tem': '88°', 'low_tem': '81°', 'description': 'AM Thunderstorms', 'humidity_day': '74%', 'humidity_night': '83%'}
+{'date': 'Sat 10', 'high_tem': '89°', 'low_tem': '82°', 'description': 'AM Thunderstorms', 'humidity_day': '72%', 'humidity_night': '80%'}
+{'date': 'Sun 11', 'high_tem': '89°', 'low_tem': '81°', 'description': 'Scattered Thunderstorms', 'humidity_day': '72%', 'humidity_night': '81%'}
+{'date': 'Mon 12', 'high_tem': '89°', 'low_tem': '81°', 'description': 'AM Thunderstorms', 'humidity_day': '73%', 'humidity_night': '82%'}
+{'date': 'Tue 13', 'high_tem': '89°', 'low_tem': '81°', 'description': 'Mostly Cloudy', 'humidity_day': '73%', 'humidity_night': '83%'}
+{'date': 'Wed 14', 'high_tem': '89°', 'low_tem': '81°', 'description': 'AM Thunderstorms', 'humidity_day': '74%', 'humidity_night': '83%'}
+{'date': 'Thu 15', 'high_tem': '90°', 'low_tem': '81°', 'description': 'AM Thunderstorms', 'humidity_day': '72%', 'humidity_night': '82%'}

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.0 on win32)" generated="20230601 16:11:01.565" rpa="false" schemaversion="3">
+<suite id="s1" name="Weather-Info" source="C:\Users\lynhbn\Documents\GitHub\the-weather-info\weather-info\weather-info.robot">
+<test id="s1-t1" name="USECASE_01 - Getting weather info of Singapore in 10 days" line="15">
+<kw name="Start Browser Then Open Url" library="PlayerLibrary" type="SETUP">
+<arg>https://weather.com/weather/tenday/l/${SINGAPORE_ID}</arg>
+<arg>headless=True</arg>
+<msg timestamp="20230601 16:11:02.346" level="TRACE">Arguments: [ 'https://weather.com/weather/tenday/l/1c2531bf04f05ea6b5ea125ad3d852952d43f10dd7a21ddd4f220912986bab39c5d15d764e59f1f7833512baf78044e7' | headless=True ]</msg>
+<msg timestamp="20230601 16:11:02.346" level="DEBUG">Test timeout 5 minutes active. 299.998 seconds left.</msg>
+<msg timestamp="20230601 16:11:06.028" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230601 16:11:02.345" endtime="20230601 16:11:06.028"/>
+</kw>
+<kw name="Get all temperature data from ten days" library="weather-info">
+<var>${temperature_data}</var>
+<msg timestamp="20230601 16:11:06.028" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230601 16:11:06.028" level="DEBUG">Test timeout 5 minutes active. 296.316 seconds left.</msg>
+<msg timestamp="20230601 16:11:07.565" level="INFO">Element locator is: //*[@data-testid="ExpandedDetailsCard"]
+[&lt;Locator frame=&lt;Frame name= url='https://weather.com/weather/tenday/l/1c2531bf04f05ea6b5ea125ad3d852952d43f10dd7a21ddd4f220912986bab39c5d15d764e59f1f7833512baf78044e7'&gt; selector='//*[@data-testid="ExpandedDetailsCard"] &gt;&gt; nth=0'&gt;, &lt;Locator frame=&lt;Frame name= url='https://weather.com/weather/tenday/l/1c2531bf04f05ea6b5ea125ad3d852952d43f10dd7a21ddd4f220912986bab39c5d15d764e59f1f7833512baf78044e7'&gt; selector='//*[@data-testid="ExpandedDetailsCard"] &gt;&gt; nth=1'&gt;, &lt;Locator frame=&lt;Frame name= url='https://weather.com/weather/tenday/l/1c2531bf04f05ea6b5ea125ad3d852952d43f10dd7a21ddd4f220912986bab39c5d15d764e59f1f7833512baf78044e7'&gt; selector='//*[@data-testid="ExpandedDetailsCard"] &gt;&gt; nth=2'&gt;, &lt;Locator frame=&lt;Frame name= url='https://weather.com/weather/tenday/l/1c2531bf04f05ea6b5ea125ad3d852952d43f10dd7a21ddd4f220912986bab39c5d15d764e59f1f7833512baf78044e7'&gt; selector='//*[@data-testid="ExpandedDetailsCard"] &gt;&gt; nth=3'&gt;, &lt;Locator frame=&lt;Frame name= url='https://weather.com/weather/tenday/l/1c2531bf04f05ea6b5ea125ad3d852952d43f10dd7a21ddd4f220912986bab39c5d15d764e59f1f7833512baf78044e7'&gt; selector='//*[@data-testid="ExpandedDetailsCard"] &gt;&gt; nth=4'&gt;, &lt;Locator frame=&lt;Frame name= url='https://weather.com/weather/tenday/l/1c2531bf04f05ea6b5ea125ad3d852952d43f10dd7a21ddd4f220912986bab39c5d15d764e59f1f7833512baf78044e7'&gt; selector='//*[@data-testid="ExpandedDetailsCard"] &gt;&gt; nth=5'&gt;, &lt;Locator frame=&lt;Frame name= url='https://weather.com/weather/tenday/l/1c2531bf04f05ea6b5ea125ad3d852952d43f10dd7a21ddd4f220912986bab39c5d15d764e59f1f7833512baf78044e7'&gt; selector='//*[@data-testid="ExpandedDetailsCard"] &gt;&gt; nth=6'&gt;, &lt;Locator frame=&lt;Frame name= url='https://weather.com/weather/tenday/l/1c2531bf04f05ea6b5ea125ad3d852952d43f10dd7a21ddd4f220912986bab39c5d15d764e59f1f7833512baf78044e7'&gt; selector='//*[@data-testid="ExpandedDetailsCard"] &gt;&gt; nth=7'&gt;, &lt;Locator frame=&lt;Frame name= url='https://weather.com/weather/tenday/l/1c2531bf04f05ea6b5ea125ad3d852952d43f10dd7a21ddd4f220912986bab39c5d15d764e59f1f7833512baf78044e7'&gt; selector='//*[@data-testid="ExpandedDetailsCard"] &gt;&gt; nth=8'&gt;, &lt;Locator frame=&lt;Frame name= url='https://weather.com/weather/tenday/l/1c2531bf04f05ea6b5ea125ad3d852952d43f10dd7a21ddd4f220912986bab39c5d15d764e59f1f7833512baf78044e7'&gt; selector='//*[@data-testid="ExpandedDetailsCard"] &gt;&gt; nth=9'&gt;, &lt;Locator frame=&lt;Frame name= url='https://weather.com/weather/tenday/l/1c2531bf04f05ea6b5ea125ad3d852952d43f10dd7a21ddd4f220912986bab39c5d15d764e59f1f7833512baf78044e7'&gt; selector='//*[@data-testid="ExpandedDetailsCard"] &gt;&gt; nth=10'&gt;, &lt;Locator frame=&lt;Frame name= url='https://weather.com/weather/tenday/l/1c2531bf04f05ea6b5ea125ad3d852952d43f10dd7a21ddd4f220912986bab39c5d15d764e59f1f7833512baf78044e7'&gt; selector='//*[@data-testid="ExpandedDetailsCard"] &gt;&gt; nth=11'&gt;, &lt;Locator frame=&lt;Frame name= url='https://weather.com/weather/tenday/l/1c2531bf04f05ea6b5ea125ad3d852952d43f10dd7a21ddd4f220912986bab39c5d15d764e59f1f7833512baf78044e7'&gt; selector='//*[@data-testid="ExpandedDetailsCard"] &gt;&gt; nth=12'&gt;, &lt;Locator frame=&lt;Frame name= url='https://weather.com/weather/tenday/l/1c2531bf04f05ea6b5ea125ad3d852952d43f10dd7a21ddd4f220912986bab39c5d15d764e59f1f7833512baf78044e7'&gt; selector='//*[@data-testid="ExpandedDetailsCard"] &gt;&gt; nth=13'&gt;, &lt;Locator frame=&lt;Frame name= url='https://weather.com/weather/tenday/l/1c2531bf04f05ea6b5ea125ad3d852952d43f10dd7a21ddd4f220912986bab39c5d15d764e59f1f7833512baf78044e7'&gt; selector='//*[@data-testid="ExpandedDetailsCard"] &gt;&gt; nth=14'&gt;]</msg>
+<msg timestamp="20230601 16:11:07.566" level="TRACE">Return: [{'date': 'Fri 02',
+  'description': 'PM Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '73%',
+  'humidity_night': '83%',
+  'low_tem': '81°'},
+ {'date': 'Sat 03',
+  'description': 'Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '71%',
+  'humidity_night': '82%',
+  'low_tem': '81°'},
+ {'date': 'Sun 04',
+  'description': 'Mostly Cloudy',
+  'high_tem': '90°',
+  'humidity_day': '72%',
+  'humidity_night': '82%',
+  'low_tem': '81°'},
+ {'date': 'Mon 05',
+  'description': 'AM Thunderstorms',
+  'high_tem': '90°',
+  'humidity_day': '72%',
+  'humidity_night': '81%',
+  'low_tem': '81°'},
+ {'date': 'Tue 06',
+  'description': 'Partly Cloudy',
+  'high_tem': '91°',
+  'humidity_day': '71%',
+  'humidity_night': '80%',
+  'low_tem': '82°'},
+ {'date': 'Wed 07',
+  'description': 'Mostly Cloudy',
+  'high_tem': '90°',
+  'humidity_day': '71%',
+  'humidity_night': '81%',
+  'low_tem': '82°'},
+ {'date': 'Thu 08',
+  'description': 'Mostly Cloudy',
+  'high_tem': '90°',
+  'humidity_day': '71%',
+  'humidity_night': '81%',
+  'low_tem': '81°'},
+ {'date': 'Fri 09',
+  'description': 'AM Thunderstorms',
+  'high_tem': '88°',
+  'humidity_day': '74%',
+  'humidity_night': '83%',
+  'low_tem': '81°'},
+ {'date': 'Sat 10',
+  'description': 'AM Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '72%',
+  'humidity_night': '80%',
+  'low_tem': '82°'},
+ {'date': 'Sun 11',
+  'description': 'Scattered Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '72%',
+  'humidity_night': '81%',
+  'low_tem': '81°'},
+ {'date': 'Mon 12',
+  'description': 'AM Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '73%',
+  'humidity_night': '82%',
+  'low_tem': '81°'},
+ {'date': 'Tue 13',
+  'description': 'Mostly Cloudy',
+  'high_tem': '89°',
+  'humidity_day': '73%',
+  'humidity_night': '83%',
+  'low_tem': '81°'},
+ {'date': 'Wed 14',
+  'description': 'AM Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '74%',
+  'humidity_night': '83%',
+  'low_tem': '81°'},
+ {'date': 'Thu 15',
+  'description': 'AM Thunderstorms',
+  'high_tem': '90°',
+  'humidity_day': '72%',
+  'humidity_night': '82%',
+  'low_tem': '81°'}]</msg>
+<msg timestamp="20230601 16:11:07.567" level="INFO">${temperature_data} = [{'date': 'Fri 02', 'high_tem': '89°', 'low_tem': '81°', 'description': 'PM Thunderstorms', 'humidity_day': '73%', 'humidity_night': '83%'}, {'date': 'Sat 03', 'high_tem': '89°', 'low_tem': '81°', 'de...</msg>
+<status status="PASS" starttime="20230601 16:11:06.028" endtime="20230601 16:11:07.567"/>
+</kw>
+<kw name="Save all the data to the file" library="weather-info">
+<arg>${temperature_data}</arg>
+<msg timestamp="20230601 16:11:07.568" level="TRACE">Arguments: [ [{'date': 'Fri 02',
+  'description': 'PM Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '73%',
+  'humidity_night': '83%',
+  'low_tem': '81°'},
+ {'date': 'Sat 03',
+  'description': 'Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '71%',
+  'humidity_night': '82%',
+  'low_tem': '81°'},
+ {'date': 'Sun 04',
+  'description': 'Mostly Cloudy',
+  'high_tem': '90°',
+  'humidity_day': '72%',
+  'humidity_night': '82%',
+  'low_tem': '81°'},
+ {'date': 'Mon 05',
+  'description': 'AM Thunderstorms',
+  'high_tem': '90°',
+  'humidity_day': '72%',
+  'humidity_night': '81%',
+  'low_tem': '81°'},
+ {'date': 'Tue 06',
+  'description': 'Partly Cloudy',
+  'high_tem': '91°',
+  'humidity_day': '71%',
+  'humidity_night': '80%',
+  'low_tem': '82°'},
+ {'date': 'Wed 07',
+  'description': 'Mostly Cloudy',
+  'high_tem': '90°',
+  'humidity_day': '71%',
+  'humidity_night': '81%',
+  'low_tem': '82°'},
+ {'date': 'Thu 08',
+  'description': 'Mostly Cloudy',
+  'high_tem': '90°',
+  'humidity_day': '71%',
+  'humidity_night': '81%',
+  'low_tem': '81°'},
+ {'date': 'Fri 09',
+  'description': 'AM Thunderstorms',
+  'high_tem': '88°',
+  'humidity_day': '74%',
+  'humidity_night': '83%',
+  'low_tem': '81°'},
+ {'date': 'Sat 10',
+  'description': 'AM Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '72%',
+  'humidity_night': '80%',
+  'low_tem': '82°'},
+ {'date': 'Sun 11',
+  'description': 'Scattered Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '72%',
+  'humidity_night': '81%',
+  'low_tem': '81°'},
+ {'date': 'Mon 12',
+  'description': 'AM Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '73%',
+  'humidity_night': '82%',
+  'low_tem': '81°'},
+ {'date': 'Tue 13',
+  'description': 'Mostly Cloudy',
+  'high_tem': '89°',
+  'humidity_day': '73%',
+  'humidity_night': '83%',
+  'low_tem': '81°'},
+ {'date': 'Wed 14',
+  'description': 'AM Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '74%',
+  'humidity_night': '83%',
+  'low_tem': '81°'},
+ {'date': 'Thu 15',
+  'description': 'AM Thunderstorms',
+  'high_tem': '90°',
+  'humidity_day': '72%',
+  'humidity_night': '82%',
+  'low_tem': '81°'}] ]</msg>
+<msg timestamp="20230601 16:11:07.569" level="DEBUG">Test timeout 5 minutes active. 294.775 seconds left.</msg>
+<msg timestamp="20230601 16:11:07.571" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230601 16:11:07.567" endtime="20230601 16:11:07.571"/>
+</kw>
+<kw name="Generate a summary report for the weather data" library="weather-info">
+<arg>${temperature_data}</arg>
+<msg timestamp="20230601 16:11:07.571" level="TRACE">Arguments: [ [{'date': 'Fri 02',
+  'description': 'PM Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '73%',
+  'humidity_night': '83%',
+  'low_tem': '81°'},
+ {'date': 'Sat 03',
+  'description': 'Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '71%',
+  'humidity_night': '82%',
+  'low_tem': '81°'},
+ {'date': 'Sun 04',
+  'description': 'Mostly Cloudy',
+  'high_tem': '90°',
+  'humidity_day': '72%',
+  'humidity_night': '82%',
+  'low_tem': '81°'},
+ {'date': 'Mon 05',
+  'description': 'AM Thunderstorms',
+  'high_tem': '90°',
+  'humidity_day': '72%',
+  'humidity_night': '81%',
+  'low_tem': '81°'},
+ {'date': 'Tue 06',
+  'description': 'Partly Cloudy',
+  'high_tem': '91°',
+  'humidity_day': '71%',
+  'humidity_night': '80%',
+  'low_tem': '82°'},
+ {'date': 'Wed 07',
+  'description': 'Mostly Cloudy',
+  'high_tem': '90°',
+  'humidity_day': '71%',
+  'humidity_night': '81%',
+  'low_tem': '82°'},
+ {'date': 'Thu 08',
+  'description': 'Mostly Cloudy',
+  'high_tem': '90°',
+  'humidity_day': '71%',
+  'humidity_night': '81%',
+  'low_tem': '81°'},
+ {'date': 'Fri 09',
+  'description': 'AM Thunderstorms',
+  'high_tem': '88°',
+  'humidity_day': '74%',
+  'humidity_night': '83%',
+  'low_tem': '81°'},
+ {'date': 'Sat 10',
+  'description': 'AM Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '72%',
+  'humidity_night': '80%',
+  'low_tem': '82°'},
+ {'date': 'Sun 11',
+  'description': 'Scattered Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '72%',
+  'humidity_night': '81%',
+  'low_tem': '81°'},
+ {'date': 'Mon 12',
+  'description': 'AM Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '73%',
+  'humidity_night': '82%',
+  'low_tem': '81°'},
+ {'date': 'Tue 13',
+  'description': 'Mostly Cloudy',
+  'high_tem': '89°',
+  'humidity_day': '73%',
+  'humidity_night': '83%',
+  'low_tem': '81°'},
+ {'date': 'Wed 14',
+  'description': 'AM Thunderstorms',
+  'high_tem': '89°',
+  'humidity_day': '74%',
+  'humidity_night': '83%',
+  'low_tem': '81°'},
+ {'date': 'Thu 15',
+  'description': 'AM Thunderstorms',
+  'high_tem': '90°',
+  'humidity_day': '72%',
+  'humidity_night': '82%',
+  'low_tem': '81°'}] ]</msg>
+<msg timestamp="20230601 16:11:07.572" level="DEBUG">Test timeout 5 minutes active. 294.772 seconds left.</msg>
+<msg timestamp="20230601 16:11:07.573" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230601 16:11:07.571" endtime="20230601 16:11:07.573"/>
+</kw>
+<kw name="Start New Browser Session" library="PlayerLibrary" type="TEARDOWN">
+<msg timestamp="20230601 16:11:07.574" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230601 16:11:10.220" level="INFO">Slept 2 seconds</msg>
+<msg timestamp="20230601 16:11:10.220" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230601 16:11:07.574" endtime="20230601 16:11:10.220"/>
+</kw>
+<tag>automated</tag>
+<tag>ui</tag>
+<timeout value="5 minutes"/>
+<status status="PASS" starttime="20230601 16:11:02.344" endtime="20230601 16:11:10.220"/>
+</test>
+<kw name="Quit All Browsers" library="PlayerLibrary" type="TEARDOWN">
+<msg timestamp="20230601 16:11:10.222" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230601 16:11:10.404" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230601 16:11:10.222" endtime="20230601 16:11:10.404"/>
+</kw>
+<status status="PASS" starttime="20230601 16:11:01.567" endtime="20230601 16:11:10.404"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">automated</stat>
+<stat pass="1" fail="0" skip="0">ui</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Weather-Info">Weather-Info</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
